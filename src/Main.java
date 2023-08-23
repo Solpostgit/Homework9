@@ -20,6 +20,10 @@ public class Main {
     public static void task1() {
         System.out.println("Task 1");
         int[] arr = generateRandomArray();
-
+        int sum = 0;
+        for (int element : arr){
+            sum+=element;
+        }
+        System.out.printf("Сумма трат за месяц составила %d рублей\n", sum);
     }
 }
