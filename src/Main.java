@@ -1,10 +1,12 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
         task1();
         task2();
-        task3();/*
-        task4();*/
+        task3();
+        task4();
 
     }
 
@@ -59,4 +61,15 @@ public class Main {
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей\n", sumAverage);
     }
 
+    public static void task4() {
+        System.out.println("Task 4");
+        //int[] arr = generateRandomArray();
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+            if (i < (reverseFullName.length) && i != 0) { // убираем запятую после последнего элемента массива
+                System.out.print(", ");
+            } else System.out.println();
+        }
+    }
 }
